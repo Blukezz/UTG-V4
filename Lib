@@ -1028,7 +1028,6 @@ function libary:CreateMain()
 
 			btn.MouseButton1Up:Connect(function()
 				Tween3:Play()
-				pcall(call)
 			end)
 		end
 		coroutine.wrap(LCVTNOR_fake_script)()
@@ -1070,6 +1069,10 @@ function libary:CreateMain()
 			end)
 		end
 		coroutine.wrap(CBJGE_fake_script)()
+		
+		TextButton.MouseButton1Click:Connect(function()
+		    pcall(call)
+		end)
 
 	end
 	return EpicLibary

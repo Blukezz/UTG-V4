@@ -1,0 +1,7 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukezz/UTG-V4/main/Lib"))()
+
+local Main_ = libary:CreateMain()
+
+Main_:CreateButton("hi", "", "", "", "", "", function()
+    print("gnhiuoftgnukifgjrhktn")
+end)

@@ -659,14 +659,14 @@ function libary:CreateMain()
 		local btn = script.Parent
 		
 		
-	function respawn()
+	function RespawnScript()
 		local char = game.Players.LocalPlayer.Character
 		if char:FindFirstChildOfClass("Humanoid") then char:FindFirstChildOfClass("Humanoid"):ChangeState(15) end
 		char:ClearAllChildren()
 		local newChar = Instance.new("Model")
 		newChar.Parent = workspace
 		game.Players.LocalPlayer.Character = newChar
-		wait()
+		wait(.001)
 		game.Players.LocalPlayer.Character = char
 		newChar:Destroy()
 	end
@@ -690,7 +690,7 @@ function libary:CreateMain()
 
 		btn.MouseButton1Up:Connect(function()
 			Tween:Play()
-			respawn()
+			RespawnScript()
 		end)
 	end
 	coroutine.wrap(VINO_fake_script)()

@@ -649,13 +649,26 @@ function libary:CreateMain()
 		end)
 	end
 	coroutine.wrap(ZHNRVN_fake_script)()
-	local function VINO_fake_script() -- respawn.LocalScript
+	local function VINO_fake_script() -- .LocalScript
 		local script = Instance.new("LocalScript", respawn)
 
 		local TweenService = game.TweenService
 		local TweenInfomation = TweenInfo.new(0.25, Enum.EasingStyle.Linear)
 		local TweenInfomation1 = TweenInfo.new(0.1, Enum.EasingStyle.Linear)
 		local btn = script.Parent
+		
+		
+	function respawn()
+		local char = game.Players.LocalPlayer.Character
+		if char:FindFirstChildOfClass("Humanoid") then char:FindFirstChildOfClass("Humanoid"):ChangeState(15) end
+		char:ClearAllChildren()
+		local newChar = Instance.new("Model")
+		newChar.Parent = workspace
+		game.Players.LocalPlayer.Character = newChar
+		wait()
+		game.Players.LocalPlayer.Character = char
+		newChar:Destroy()
+	end
 
 		local Tween = TweenService:Create(btn, TweenInfomation, { ImageColor3 = Color3.fromRGB(255, 255, 255) })
 		local Tween1 = TweenService:Create(btn, TweenInfomation, { ImageColor3 = Color3.fromRGB(200, 200, 200) })
@@ -676,23 +689,7 @@ function libary:CreateMain()
 
 		btn.MouseButton1Up:Connect(function()
 			Tween:Play()
-			game.Players.LocalPlayer.Character.Humanoid.Name = 1
-			local l = game.Players.LocalPlayer.Character["1"]:Clone()
-			l.Parent = game.Players.LocalPlayer.Character
-			l.Name = "Humanoid"
-			wait()
-			game.Players.LocalPlayer.Character["1"]:Destroy()
-			game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character
-			game.Players.LocalPlayer.Character.Animate.Disabled = true
-			wait()
-			game.Players.LocalPlayer.Character.Animate.Disabled = false
-			game.Players.LocalPlayer.Character.Humanoid.DisplayDistanceType = "None"
-			wait()
-			local prt = Instance.new("Model", workspace)
-			Instance.new("Part", prt).Name = "Torso"
-			Instance.new("Part", prt).Name = "Head"
-			Instance.new("Humanoid", prt).Name = "Humanoid"
-			game.Players.LocalPlayer.Character = prt
+			respawn()
 		end)
 	end
 	coroutine.wrap(VINO_fake_script)()

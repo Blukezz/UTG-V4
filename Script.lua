@@ -45,3 +45,43 @@ end)
 Main_:CreateButton("Achromatic", "Shadow Blademasters Blade, Blademasters Blade", "Golden Demonic Greatsword, Corrupt Demonic Greatsword", "Frozen Demonic Greatsword, Demonic Greatsword", "", "", function()
     loadstring(game:HttpGetAsync("https://pastebin.com/raw/ziSNxnKP"))()
 end)
+
+Main_:CreateButton("D**ck", "International Fedora - Canada, International Fedora - Philippines", "International Fedora - Netherlands, International Fedora - Germany", "International Fedora - Argentina, International Fedora - Chile", "International Fedora - Vietnam, International Fedora - Ukraine", "International Fedora - United Kingdom, International Fedora - Japan", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/1WvphPVW"))()
+end)
+
+Main_:CreateButton("Boobs", "Motocross #62: Fire", "Motocross #77: The Sting", "Pink Ornament Earrings", "", "", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/CszjntnR"))()
+end)
+
+Main_:CreateButton("Floss", "None", "", "", "", "", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/JfyvWHLf"))()
+end)
+
+Main_:CreateButton("Defult Dance", "None", "", "", "", "", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/iXAe7Fub"))()
+end)
+
+Main_:CreateButton("Pillow", "Pillow", "", "", "", "", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/RbKLMpdt"))()
+end)
+
+Main_:CreateButton("Drone", "Ro Drone", "", "", "", "", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/GriadDUx"))()
+end)
+
+Main_:CreateButton("Trash Can", "Trash Can", "Trash Cam Lid", "Destructive Aura", "", "", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/zeYrMRa2"))()
+end)
+
+Main_:CreateButton("Chill", "None", "", "", "", "", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/XmHFdTij"))()
+end)
+
+Main_:CreateButton("Ultimate Meme Dance", "None", "", "", "", "", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/0QfjMKrF"))()
+end)
+
+Main_:CreateButton("Joy", "None", "", "", "", "", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/LEAQuKj0"))()
+end)

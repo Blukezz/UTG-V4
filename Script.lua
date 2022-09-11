@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukezz/UTG-V4/main/Lib.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukezz/UTG-V4/main/Lib"))()
 
 local Main_ = libary:CreateMain()
 
@@ -26,12 +26,12 @@ Main_:CreateButton("Gale Fighter", "None", "", "", "", "", function()
     loadstring(game:HttpGetAsync("https://pastebin.com/raw/XhTSzvNU"))()
 end)
 
-Main_:CreateButton("Among Us V2", "None", "", "", "", "", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/G9eZYk3g3", true))()
+Main_:CreateButton("Among Us V4", "None", "", "", "", "", function()
+    loadstring(game:HttpGet("https://paste.ee/e/czYMw/0", true))()
 end)
 
 Main_:CreateButton("Killbot V2", "None", "", "", "", "", function()
-    loadstring(game:HttpGetAsync("https://pastebin.com/raw/tj7dCzAK"))()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/ydQ1ysuA"))()
 end)
 
 Main_:CreateButton("Neko Maid", "None", "", "", "", "", function()

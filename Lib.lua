@@ -109,6 +109,7 @@ function libary:CreateMain()
 
 	UIListLayout.Parent = ScrollingFrame
 	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout.Padding = UDim.new(0, 5)
 
 	SettingsPage.Name = "SettingsPage"
 	SettingsPage.Parent = Frame

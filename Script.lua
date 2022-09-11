@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukezz/UTG-V4/main/Lib.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukezz/UTG-V4/main/Lib"))()
 
 local Main_ = libary:CreateMain()
 
@@ -23,11 +23,11 @@ Main_:CreateButton("Sonic", "None", "", "", "", "", function()
 end)
 
 Main_:CreateButton("Gale Fighter", "None", "", "", "", "", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/PjJNLaFa", true))()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/XhTSzvNU"))()
 end)
 
-Main_:CreateButton("Among Us", "None", "", "", "", "", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/JXUMavf3", true))()
+Main_:CreateButton("Among Us V2", "None", "", "", "", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/G9eZYk3g3", true))()
 end)
 
 Main_:CreateButton("Killbot V2", "None", "", "", "", "", function()
@@ -38,6 +38,10 @@ Main_:CreateButton("Neko Maid", "None", "", "", "", "", function()
     loadstring(game:HttpGetAsync("https://paste.ee/d/iCtCM/0"))()
 end)
 
-Main_:CreateButton("Invis", "None", "", "", "", "", function()
+Main_:CreateButton("R15 Invis", "None", "", "", "", "", function()
     loadstring(game:HttpGetAsync("https://pastebin.com/raw/uc6nN23y"))()
+end)
+
+Main_:CreateButton("Achromatic", "Shadow Blademasters Blade, Blademasters Blade", "Golden Demonic Greatsword, Corrupt Demonic Greatsword", "Frozen Demonic Greatsword, Demonic Greatsword", "", "", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/ziSNxnKP"))()
 end)

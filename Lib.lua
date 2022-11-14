@@ -92,7 +92,7 @@ function libary:CreateMain()
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
 	Frame.Parent = Main
-	Frame.BackgroundColor3 = Color3.fromRGB(30, 33, 36)
+	Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 	Frame.ClipsDescendants = true
 	Frame.Position = UDim2.new(0.0506031476, 0, 0.120513059, 0)
 	Frame.Size = UDim2.new(0, 286, 0, 255)
@@ -101,7 +101,7 @@ function libary:CreateMain()
 
 	ScrollingFrame.Parent = Frame
 	ScrollingFrame.Active = true
-	ScrollingFrame.BackgroundColor3 = Color3.fromRGB(30, 33, 36)
+	ScrollingFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 	ScrollingFrame.BorderSizePixel = 0
 	ScrollingFrame.Position = UDim2.new(0.0279720277, 0, 0.0233463068, 0)
 	ScrollingFrame.Size = UDim2.new(0, 271, 0, 243)
@@ -225,7 +225,7 @@ function libary:CreateMain()
 
 	ControlBar.Name = "ControlBar"
 	ControlBar.Parent = Main
-	ControlBar.BackgroundColor3 = Color3.fromRGB(30, 33, 36)
+	ControlBar.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 	ControlBar.ClipsDescendants = true
 	ControlBar.Position = UDim2.new(0.0506031476, 0, 0.822130859, 0)
 	ControlBar.Size = UDim2.new(0, 286, 0, 51)
@@ -307,7 +307,7 @@ function libary:CreateMain()
 
 	Hats.Name = "Hats"
 	Hats.Parent = UtgV4
-	Hats.BackgroundColor3 = Color3.fromRGB(30, 33, 36)
+	Hats.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 	Hats.Position = UDim2.new(0.0165876783, 0, 0.540765405, 0)
 	Hats.Size = UDim2.new(0, 247, 0, 257)
 	Hats.Visible = false
@@ -431,7 +431,7 @@ function libary:CreateMain()
 
 	Ok.Name = "Ok"
 	Ok.Parent = Hats
-	Ok.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
+	Ok.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 	Ok.Position = UDim2.new(0.0607287437, 0, 0.844357967, 0)
 	Ok.Size = UDim2.new(0, 217, 0, 27)
 	Ok.AutoButtonColor = false
@@ -658,19 +658,19 @@ function libary:CreateMain()
 		local TweenInfomation = TweenInfo.new(0.25, Enum.EasingStyle.Linear)
 		local TweenInfomation1 = TweenInfo.new(0.1, Enum.EasingStyle.Linear)
 		local btn = script.Parent
-		
-		
-	function RespawnScript()
-		local char = game.Players.LocalPlayer.Character
-		if char:FindFirstChildOfClass("Humanoid") then char:FindFirstChildOfClass("Humanoid"):ChangeState(15) end
-		char:ClearAllChildren()
-		local newChar = Instance.new("Model")
-		newChar.Parent = workspace
-		game.Players.LocalPlayer.Character = newChar
-		wait(.001)
-		game.Players.LocalPlayer.Character = char
-		newChar:Destroy()
-	end
+
+
+		function RespawnScript()
+			local char = game.Players.LocalPlayer.Character
+			if char:FindFirstChildOfClass("Humanoid") then char:FindFirstChildOfClass("Humanoid"):ChangeState(15) end
+			char:ClearAllChildren()
+			local newChar = Instance.new("Model")
+			newChar.Parent = workspace
+			game.Players.LocalPlayer.Character = newChar
+			wait(.001)
+			game.Players.LocalPlayer.Character = char
+			newChar:Destroy()
+		end
 
 		local Tween = TweenService:Create(btn, TweenInfomation, { ImageColor3 = Color3.fromRGB(255, 255, 255) })
 		local Tween1 = TweenService:Create(btn, TweenInfomation, { ImageColor3 = Color3.fromRGB(200, 200, 200) })
@@ -868,10 +868,10 @@ function libary:CreateMain()
 		local btn = script.Parent
 		local HatList = script.Parent.Parent.Frame
 
-		local Tween = TweenService:Create(btn, TweenInfomation, { BackgroundColor3 = Color3.fromRGB(60, 63, 68) })
-		local Tween1 = TweenService:Create(btn, TweenInfomation, { BackgroundColor3 = Color3.fromRGB(40, 43, 48) })
-		local Tween2 = TweenService:Create(btn, TweenInfomation1, { BackgroundColor3 = Color3.fromRGB(40, 43, 48) })
-		local Tween3 = TweenService:Create(btn, TweenInfomation1, { BackgroundColor3 = Color3.fromRGB(60, 63, 68) })
+		local Tween = TweenService:Create(btn, TweenInfomation, { BackgroundColor3 = Color3.fromRGB(60, 60, 60) })
+		local Tween1 = TweenService:Create(btn, TweenInfomation, { BackgroundColor3 = Color3.fromRGB(40, 40, 40) })
+		local Tween2 = TweenService:Create(btn, TweenInfomation1, { BackgroundColor3 = Color3.fromRGB(40, 40, 40) })
+		local Tween3 = TweenService:Create(btn, TweenInfomation1, { BackgroundColor3 = Color3.fromRGB(60, 60, 60) })
 
 		btn.MouseEnter:Connect(function()
 			Tween:Play()
@@ -946,10 +946,10 @@ function libary:CreateMain()
 		local MoreButton = Instance.new("TextButton")
 		local UICorner_14 = Instance.new("UICorner")
 		local More = Instance.new("ImageLabel")
-		
+
 		MoreButton.Name = "MoreButton"
 		MoreButton.Parent = TextButton
-		MoreButton.BackgroundColor3 = Color3.fromRGB(40, 43, 48)
+		MoreButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 		MoreButton.Position = UDim2.new(1.02978718, 0, 0, 0)
 		MoreButton.Size = UDim2.new(0, 29, 0, 29)
 		MoreButton.AutoButtonColor = false
@@ -963,7 +963,7 @@ function libary:CreateMain()
 		More.Name = "More"
 		More.Parent = MoreButton
 		More.Active = true
-		More.BackgroundColor3 = Color3.fromRGB(40, 43, 48)
+		More.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 		More.BackgroundTransparency = 1.000
 		More.LayoutOrder = 5
 		More.Selectable = true
@@ -975,7 +975,7 @@ function libary:CreateMain()
 
 		TextButton.Name = Text_
 		TextButton.Parent = ScrollingFrame
-		TextButton.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
+		TextButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 		TextButton.Size = UDim2.new(0, 235, 0, 29)
 		TextButton.AutoButtonColor = false
 		TextButton.Font = Enum.Font.SourceSans
@@ -983,7 +983,7 @@ function libary:CreateMain()
 		TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 		TextButton.TextSize = 14.000
 		TextButton.TextXAlignment = Enum.TextXAlignment.Left
-		
+
 		UICorner_13.Parent = MoreButton
 		UICorner_2.Parent = TextButton
 
@@ -1008,10 +1008,10 @@ function libary:CreateMain()
 			local TweenInfomation1 = TweenInfo.new(0.1, Enum.EasingStyle.Linear)
 			local btn = script.Parent
 
-			local Tween = TweenService:Create(btn, TweenInfomation, { BackgroundColor3 = Color3.fromRGB(60, 63, 68) })
-			local Tween1 = TweenService:Create(btn, TweenInfomation, { BackgroundColor3 = Color3.fromRGB(40, 43, 48) })
-			local Tween2 = TweenService:Create(btn, TweenInfomation1, { BackgroundColor3 = Color3.fromRGB(40, 43, 48) })
-			local Tween3 = TweenService:Create(btn, TweenInfomation1, { BackgroundColor3 = Color3.fromRGB(60, 63, 68) })
+			local Tween = TweenService:Create(btn, TweenInfomation, { BackgroundColor3 = Color3.fromRGB(60, 60, 60) })
+			local Tween1 = TweenService:Create(btn, TweenInfomation, { BackgroundColor3 = Color3.fromRGB(40, 40, 40) })
+			local Tween2 = TweenService:Create(btn, TweenInfomation1, { BackgroundColor3 = Color3.fromRGB(40, 40, 40) })
+			local Tween3 = TweenService:Create(btn, TweenInfomation1, { BackgroundColor3 = Color3.fromRGB(60, 60, 60) })
 
 			btn.MouseEnter:Connect(function()
 				Tween:Play()
@@ -1030,7 +1030,7 @@ function libary:CreateMain()
 			end)
 		end
 		coroutine.wrap(LCVTNOR_fake_script)()
-		
+
 		local function CBJGE_fake_script() -- MoreButton.LocalScript 
 			local script = Instance.new('LocalScript', MoreButton)
 
@@ -1040,10 +1040,10 @@ function libary:CreateMain()
 			local TweenInfomation1 = TweenInfo.new(.1, Enum.EasingStyle.Linear)
 			local btn = script.Parent
 
-			local Tween = TweenService:Create(btn, TweenInfomation, {BackgroundColor3 = Color3.fromRGB(60, 63, 68)})
-			local Tween1 = TweenService:Create(btn, TweenInfomation, {BackgroundColor3 = Color3.fromRGB(40, 43, 48)})
-			local Tween2 = TweenService:Create(btn, TweenInfomation1, {BackgroundColor3 = Color3.fromRGB(40, 43, 48)})
-			local Tween3 = TweenService:Create(btn, TweenInfomation1, {BackgroundColor3 = Color3.fromRGB(60, 63, 68)})
+			local Tween = TweenService:Create(btn, TweenInfomation, {BackgroundColor3 = Color3.fromRGB(60, 60, 60)})
+			local Tween1 = TweenService:Create(btn, TweenInfomation, {BackgroundColor3 = Color3.fromRGB(40, 40, 40)})
+			local Tween2 = TweenService:Create(btn, TweenInfomation1, {BackgroundColor3 = Color3.fromRGB(40, 40, 40)})
+			local Tween3 = TweenService:Create(btn, TweenInfomation1, {BackgroundColor3 = Color3.fromRGB(60, 60, 60)})
 
 			btn.MouseEnter:Connect(function()
 				Tween:Play()
@@ -1059,7 +1059,7 @@ function libary:CreateMain()
 
 			btn.MouseButton1Up:Connect(function()
 				Tween3:Play()
-			    Hats.Visible = true
+				Hats.Visible = true
 				Frame_2.Hat1.Text = Hat_1
 				Frame_2.Hat2.Text = Hat_2
 				Frame_2.Hat3.Text = Hat_3
@@ -1068,9 +1068,9 @@ function libary:CreateMain()
 			end)
 		end
 		coroutine.wrap(CBJGE_fake_script)()
-		
+
 		TextButton.MouseButton1Click:Connect(function()
-		    pcall(call)
+			pcall(call)
 		end)
 
 	end

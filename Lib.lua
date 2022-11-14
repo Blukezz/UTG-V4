@@ -106,6 +106,7 @@ function libary:CreateMain()
 	ScrollingFrame.Position = UDim2.new(0.0279720277, 0, 0.0233463068, 0)
 	ScrollingFrame.Size = UDim2.new(0, 271, 0, 243)
 	ScrollingFrame.ScrollBarThickness = 0
+	ScrollingFrame.CanvasSize = UDim2.new(0, 0, 15, 0)
 
 	UIListLayout.Parent = ScrollingFrame
 	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder

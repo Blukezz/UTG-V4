@@ -70,7 +70,7 @@ function libary:CreateMain()
 
 	Main.Name = "Main"
 	Main.Parent = UtgV4
-	Main.BackgroundColor3 = Color3.fromRGB(30, 33, 36)
+	Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 	Main.Position = UDim2.new(0.370458126, 0, 0.174708813, 0)
 	Main.Size = UDim2.new(0, 319, 0, 389)
 
@@ -431,7 +431,7 @@ function libary:CreateMain()
 
 	Ok.Name = "Ok"
 	Ok.Parent = Hats
-	Ok.BackgroundColor3 = Color3.fromRGB(40, 43, 48)
+	Ok.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
 	Ok.Position = UDim2.new(0.0607287437, 0, 0.844357967, 0)
 	Ok.Size = UDim2.new(0, 217, 0, 27)
 	Ok.AutoButtonColor = false
@@ -975,7 +975,7 @@ function libary:CreateMain()
 
 		TextButton.Name = Text_
 		TextButton.Parent = ScrollingFrame
-		TextButton.BackgroundColor3 = Color3.fromRGB(40, 43, 48)
+		TextButton.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
 		TextButton.Size = UDim2.new(0, 235, 0, 29)
 		TextButton.AutoButtonColor = false
 		TextButton.Font = Enum.Font.SourceSans

@@ -50,6 +50,7 @@ function libary:CreateMain()
 	local UiStroke = Instance.new("UIStroke")
 	local UiStroke_1 = Instance.new("UIStroke")
 	local UiStroke_2 = Instance.new("UIStroke")
+	local Credits = Instance.new("TextLabel")
 
 	UiStroke.Parent = ControlBar
 	UiStroke.Color = Color3.fromRGB(66, 69, 73)
@@ -118,6 +119,21 @@ function libary:CreateMain()
 	SettingsPage.BackgroundTransparency = 1.000
 	SettingsPage.Position = UDim2.new(1.028, 0, 0.0199999996, 0)
 	SettingsPage.Size = UDim2.new(0, 271, 0, 243)
+	
+	
+	Credits.Parent = SettingsPage
+	Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Credits.BackgroundTransparency = 1.000
+	Credits.Position = UDim2.new(0.022, 0, 0.835390925, 0)
+	Credits.Size = UDim2.new(0, 118, 0, 40)
+	Credits.Font = Enum.Font.SourceSans
+	Credits.Text = "Made By Juxt aka Blukez"
+	Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Credits.TextScaled = true
+	Credits.TextSize = 14.000
+	Credits.TextWrapped = true
+	Credits.TextXAlignment = Enum.TextXAlignment.Left
+	Credits.TextYAlignment = Enum.TextYAlignment.Bottom
 
 	Rejoin.Name = "Rejoin"
 	Rejoin.Parent = SettingsPage
@@ -814,7 +830,7 @@ function libary:CreateMain()
 		searchBar.Changed:Connect(UpdateResults)
 	end
 	coroutine.wrap(EUWL_fake_script)()
-	local function QRSVH_fake_script() -- Main.Drag
+	local function QRSVH_fake_script()
 		local script = Instance.new("LocalScript", Main)
 
 		local UIS = game:GetService("UserInputService")
@@ -949,7 +965,7 @@ function libary:CreateMain()
 
 		MoreButton.Name = "MoreButton"
 		MoreButton.Parent = TextButton
-		MoreButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+		MoreButton.BackgroundColor3 = Color3.fromRGB(40, 40, 42)
 		MoreButton.Position = UDim2.new(1.02978718, 0, 0, 0)
 		MoreButton.Size = UDim2.new(0, 29, 0, 29)
 		MoreButton.AutoButtonColor = false
@@ -963,7 +979,7 @@ function libary:CreateMain()
 		More.Name = "More"
 		More.Parent = MoreButton
 		More.Active = true
-		More.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+		More.BackgroundColor3 = Color3.fromRGB(40, 40, 42)
 		More.BackgroundTransparency = 1.000
 		More.LayoutOrder = 5
 		More.Selectable = true
@@ -975,7 +991,7 @@ function libary:CreateMain()
 
 		TextButton.Name = Text_
 		TextButton.Parent = ScrollingFrame
-		TextButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+		TextButton.BackgroundColor3 = Color3.fromRGB(40, 40, 42)
 		TextButton.Size = UDim2.new(0, 235, 0, 29)
 		TextButton.AutoButtonColor = false
 		TextButton.Font = Enum.Font.SourceSans
@@ -1008,10 +1024,10 @@ function libary:CreateMain()
 			local TweenInfomation1 = TweenInfo.new(0.1, Enum.EasingStyle.Linear)
 			local btn = script.Parent
 
-			local Tween = TweenService:Create(btn, TweenInfomation, { BackgroundColor3 = Color3.fromRGB(60, 60, 60) })
-			local Tween1 = TweenService:Create(btn, TweenInfomation, { BackgroundColor3 = Color3.fromRGB(40, 40, 40) })
-			local Tween2 = TweenService:Create(btn, TweenInfomation1, { BackgroundColor3 = Color3.fromRGB(40, 40, 40) })
-			local Tween3 = TweenService:Create(btn, TweenInfomation1, { BackgroundColor3 = Color3.fromRGB(60, 60, 60) })
+			local Tween = TweenService:Create(btn, TweenInfomation, { BackgroundColor3 = Color3.fromRGB(60, 60, 62) })
+			local Tween1 = TweenService:Create(btn, TweenInfomation, { BackgroundColor3 = Color3.fromRGB(40, 40, 42) })
+			local Tween2 = TweenService:Create(btn, TweenInfomation1, { BackgroundColor3 = Color3.fromRGB(40, 40, 42) })
+			local Tween3 = TweenService:Create(btn, TweenInfomation1, { BackgroundColor3 = Color3.fromRGB(60, 60, 62) })
 
 			btn.MouseEnter:Connect(function()
 				Tween:Play()
@@ -1040,10 +1056,10 @@ function libary:CreateMain()
 			local TweenInfomation1 = TweenInfo.new(.1, Enum.EasingStyle.Linear)
 			local btn = script.Parent
 
-			local Tween = TweenService:Create(btn, TweenInfomation, {BackgroundColor3 = Color3.fromRGB(60, 60, 60)})
-			local Tween1 = TweenService:Create(btn, TweenInfomation, {BackgroundColor3 = Color3.fromRGB(40, 40, 40)})
-			local Tween2 = TweenService:Create(btn, TweenInfomation1, {BackgroundColor3 = Color3.fromRGB(40, 40, 40)})
-			local Tween3 = TweenService:Create(btn, TweenInfomation1, {BackgroundColor3 = Color3.fromRGB(60, 60, 60)})
+			local Tween = TweenService:Create(btn, TweenInfomation, {BackgroundColor3 = Color3.fromRGB(60, 60, 62)})
+			local Tween1 = TweenService:Create(btn, TweenInfomation, {BackgroundColor3 = Color3.fromRGB(40, 40, 42)})
+			local Tween2 = TweenService:Create(btn, TweenInfomation1, {BackgroundColor3 = Color3.fromRGB(40, 40, 42)})
+			local Tween3 = TweenService:Create(btn, TweenInfomation1, {BackgroundColor3 = Color3.fromRGB(60, 60, 62)})
 
 			btn.MouseEnter:Connect(function()
 				Tween:Play()
